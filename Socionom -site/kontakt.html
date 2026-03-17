@@ -24,11 +24,12 @@
 
      <!-- INTRO TILL KONTAKTSIDAN -->
     <h2>Kontakt</h2>
-    <p>Du kan få hjälp på flera olika sätt:</p>
+    <p class="intro-text">Du är inte ensam – här finns hjälp att få.</p>
     
      <!-- LISTA MED KONTAKTALTERNATIV -->
   
-    <p>Hör av dig via formuläret nedan. Vi svarar snabbt!</p>
+    <p class="huvudtext">Fyll i formuläret nedan så hör vi av oss så snart som möjligt</p>
+    
     
     <!-- KONTAKTFORMULÄRET ANVÄNDER HTML5-VALIDERING. 
      'required' SÄKERSTÄLLER ATT OBLIGATORISKA FÄLLT ÄR IFYLLDA INNAN FORMULÄRET SKICKAS.
@@ -36,12 +37,12 @@
       action="#" ANVÄNDS. -->
 
         <form action="#">
-        <input type="text" placeholder="Namn: *"required><br><br>
-        <input type="text" placeholder="E-post: *" required><br><br>
-        <input type="text" placeholder="Telefonnummer:"><br><br>
+        <input type="text" placeholder="Namn: *"required>
+        <input type="email" placeholder="E-post: *" required>
+        <input type="tel" placeholder="Telefonnummer:">
         <textarea placeholder="Skriv ditt meddelande" rows="6"></textarea>
         
-        <button>Skicka</button>
+        <button type="submit">Skicka</button>
     </form>
 </main>
     <footer>
