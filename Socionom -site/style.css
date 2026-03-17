@@ -1,4 +1,3 @@
-
 /* 
    CSS för Hjälpvägledningsidan.
    Skapad av: Antonio Martinez
@@ -185,16 +184,7 @@ ul {
 
 
  /* --- RUTOR FÖR VIKTIG INFORMATION, T.EX. AKUT HJÄLP--  */
-
-.varningsruta {
-    background-color: #FDECEC;
-    border-left: 4px solid #D9534F;                           
-    margin-bottom: 40px;
-    padding: 15px;
-    border-radius: 6px;
-    margin-top: 20px;                                                      
-}  
-                                                        
+                                                     
 .akut-ruta {
     background-color: #FDECEC;
     border-left: 4px solid #D9534F;
@@ -207,7 +197,33 @@ ul {
 
 .akut-ruta h2 {
     margin-bottom: 10px;
+   
 }
+
+.varningsruta {
+    background-color: #FDECEC;
+    border-left: 4px solid #D9534F;                           
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 20px;                                                      
+}  
+
+.varningsruta h3 {
+text-align: center;
+font-weight: 700;
+margin-bottom: 10px;
+color: #414a4c;
+ }
+
+.varningsruta p {
+    color: #808080;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
 
 /* ----------- Bildspel -----------*/
 
@@ -329,6 +345,31 @@ main section {
     font-size: 20px;
     line-height: 1.7;
     color: #5e5e5e;
+}
+
+/* 
+  Länkfärger för stöd-kort:
+  - Grundfärg (#2A5D9F): trygg, lugn blå som passar temat.
+  - Hoverfärg (#4A86C5): ljusare ton som ger tydlig visuell markering vid hover.
+*/
+
+.stod-kort a {
+    color:#2A5D9F;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.stod-kort a:hover {
+    text-decoration: underline;
+    color: #4A86C5;
+}
+
+.support-list li {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 20px;
 }
 
 html {
@@ -469,3 +510,5 @@ NÄR MAN KLICKAR PÅ "Läs mer" PÅ STARTSIDAN HOPPAR SIDAN TILL RÄTT RUTA PÅ 
     from { box-shadow: 0 0 20px rgba(74,144,226,0.6); }
     to   { box-shadow: none; }
 }
+
+
