@@ -1,3 +1,4 @@
+
 /* 
    CSS för Hjälpvägledningsidan.
    Skapad av: Antonio Martinez
@@ -115,6 +116,25 @@ main {
 }
 
 
+main h2{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+main p {
+    max-width: 700px;
+    text-align: center;
+    line-height: 1.6;
+    color: #222222;
+    margin: 0 auto 30px         /* Centrerar hela paragrafblocket på sidan.Behövs för att texten ska kunna alignas mot mitten,
+                                eftersom text-align bara centrerar innehållet – inte själva blocket. */
+
+
+
+   
+}
 
 .card:hover {
     transform: translateY(-5px);                 /* --  EN MINDRE HOVER-EFFEKT SOM LYFTER KORTET FÖR ATT VISA ATT DET ÄR KLICKBART -- */
@@ -147,7 +167,7 @@ button {
     color: white;
     border: none;
     cursor: pointer;                /* -- VISAR ATT ELEMENTET ÄR KLICKBART -- */
-
+    transition: 0.3s;
 }
 button:hover {
     background-color: #007CCC;               /* -- HOVER-EFFEKT SOM GÖR KNAPPEN MER INTERAKTIV -- */
@@ -157,22 +177,57 @@ button:hover {
 
 /* -- STIL FÖR FORMULÄR, INPUTFÄLT OCH KNAPPAR -- */
 
+
 form {
 
     border: 1px solid #CCC;                     
     background-color: #DEDDD5;
     margin: auto;
     padding: 50px;
-    max-width: 500px;
+    max-width: 450px;
+
 
 }                                                                     
 
 
 input, textarea {
     width: 100%;
-    padding: 20px;
+    padding: 15px;
     margin-bottom: 10px;
+    border: 1px solid #bbb;
+     border-radius: 6px;
+
+    
 }
+
+
+textarea:focus {
+    outline: none;
+    border-color: #007CCC;
+    box-shadow: 0 0 0 3px rgba(0,124,204,0.2);
+    
+
+}
+
+.intro-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2F2F2F;
+}
+
+.huvudtext {
+    font-size: 16px;
+    color: #666;
+}
+
+.intro-text,
+.huvudtext {
+    max-width: 500px;   /* samma bredd som formuläret */
+    margin: 0 auto 5px;
+    text-align: center;
+    line-height: 1.4;
+}
+
 
 /* ----------- Listor -----------*/
 
@@ -220,7 +275,8 @@ color: #414a4c;
     color: #808080;
     font-size: 16px;
     line-height: 1.5;
-    margin: 0;
+    margin:auto;
+    text-align: center;
 }
 
 
@@ -248,7 +304,7 @@ border-radius:8px;
 
 
 main section {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 /* ----------- GRID SEKTION-----------*/
@@ -376,6 +432,8 @@ html {
     scroll-behavior: smooth;    /* -- GER EN MJUKARE OCH MER ANVÄNDARVÄNLIG SCROLL -- */
 }
 
+/* ----------- Rättigheter & Integritet ----------*/
+
 
 
 
@@ -385,24 +443,36 @@ html {
     display: grid;
     grid-template-columns: repeat(3, 1fr);     /* -- SAMMA GRID-PRINCIP SOM OVAN -- */
     gap: 20px;
-    margin-top: 40px;
+    margin-top: 20px;
 
 
 }
+
+
 
 .rattigheter-grid article {
     background-color: #FFFAF2;
     padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #DDD;
+    border-radius: 10px;
+    border: 2px solid #DDD;
+    transition: transform 0.3s ease,
+}
+
+.rattigheter-grid article:hover{
+    transform: translateY(-4px);
+    
 }
 
 .rattigheter-grid h3 {
-    margin-bottom: 10px;                   
+    margin-bottom: 10px;
+    font-size: 20px;  
+    color: #222;                 
 }
 
 .rattigheter-grid p {
     text-align: left;
+    color: #555;
+    line-height: 1.56;
 }
 
 
@@ -510,5 +580,3 @@ NÄR MAN KLICKAR PÅ "Läs mer" PÅ STARTSIDAN HOPPAR SIDAN TILL RÄTT RUTA PÅ 
     from { box-shadow: 0 0 20px rgba(74,144,226,0.6); }
     to   { box-shadow: none; }
 }
-
-
