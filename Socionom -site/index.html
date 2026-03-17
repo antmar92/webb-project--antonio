@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stöd & Vägledning</title>  <!-- SIDANS TITEL SOM VISAS I WEBLÄSARENS FLIK -->
+  
+<!-- EXTERN CSS-FIL SOM INNEHÅLLER STANDARDSTILAR FÖR Splide.js OCH STYR BILDSPELETS UTSEENDE OCH HUR DET REAGERAR -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+    <!-- GOOGLE FONTS FÖR TYPSNITT PÅ SIDAN -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
+
+
+    <link rel="stylesheet" href="style.css">  <!-- MIN EGEN CSS-FIL -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>  <!--  EXTERNT JAVASCRIPT-BIBLIOTEK SOM AKTIVERAR BILDSPELET  -->
+
+    <script src="script.js" defer> </script>      <!-- MIN EGEN JAVASCRIPT-FIL DÄR SPLIDE INITIERAS --> 
+
+
+
+    
+</head>
+<body>
+    <!-- SIDHUVUD MED TITEL OCH NAVIGATIONSMENY. -->
+
+    <header>
+        <h1>Hjälpvägledningen</h1>
+        
+        <!-- Navigation mellan sidans olika delar -->
+        <nav>
+            <a href="index.html" class="active">Hem</a>
+            <a href="stod.html">Stöd</a>
+            <a href="rattigheter.html">Rättigheter</a>
+            <a href="kontakt.html">kontakt</a>
+        </nav>
+    </header>
+    
+      <!-- Huvudinnehållet på sidan -->
+    <main>
+        <section class="intro-ruta">           <!-- INTRO-RUTA SOM VÄLKOMMNAR ANVÄNDAREN. -->
+               <h2> Välkommen - du är inte ensam. </h2>
+               <p> Trygg vägledning när livet känns svårt. </p>
+        </section>
+         
+        <!-- BILDSPEL SKAPAT MED Splide.js.
+            JavaScript-biblioteket HANTERAR BILDÖVERGÅNGAR, AUTOPLAY OCH RESPONSIVITET.
+            KLASSEN 'splide__track' OCH 'splide__list' ÄR OBLIGATORISKA STRUKTURER FÖR ATT SPLIDE SKA KUNNA FUNGERA  -->
+        <section class="bildspels-section">
+            <div id="bildspel" class="splide">
+                <div class="splide__track">
+
+                    <!-- VARJE li ÄR EN BILD I BILDSPELET -->
+                     <ul class="splide__list">
+
+                       <li class="splide__slide">
+                            <img src="bilder/vatten.jpg" alt="Lugnt vatten">  
+                       </li>
+
+
+                     <li class="splide__slide">
+                        <img src="bilder/stenar.jpg" alt="Stenar i balans">
+                     </li>
+                      
+                     <li class="splide__slide">
+                         <img src="bilder/skog.jpg" alt="Skog i kvällsljus">
+                     </li>
+
+                   
+                   
+                   
+                   
+                    </ul>
+
+
+                </div>
+
+                </div>
+
+
+        </section>
+
+
+        <section class="akut-ruta">
+            <h2>Behöver du hjälp direkt?</h2>
+            <p>Vid akuta situationer ring 112. För vårdrådgivning kan du kontakta 1177.</p>        <!-- AKUT-RUTA MED VIKTIG INFORMATION -->
+
+        </section>
+        
+      <!-- TRE INFORMATIONSKORT SOM LEDER VIDARE TILL STÖDSIDAN -->
+
+        <section class="grid-section">
+            <article class="card">
+                <h3> 👤Ungdomstöd</h3>
+                <p>Information och stöd för unga.</p>
+                <a href="stod.html#ungdom">Läs mer</a>
+            </article>
+
+
+            <article class="card">
+                <h3> 👪Familjerådgivning</h3>
+                <p>Stöd och vägledning för familjer.</p>
+                <a href="stod.html#familj">Läs mer</a>
+            </article>
+
+
+            <article class="card">
+                <h3> 🏛️Socialtjänst</h3>
+                <p>Hjälp och samtalstöd.</p>
+                <a href="stod.html#social">Läs mer</a>
+            </article>
+
+
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy 2026 Antonio Martinez</p>   <!-- SIDFOT MED UPPHOVSRÄTT -->
+        <a href="policy.html">GDPR & Integritetspolicy</a>
+
+
+    </footer>
+</body>
+</html>
