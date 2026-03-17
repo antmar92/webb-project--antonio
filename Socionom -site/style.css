@@ -8,6 +8,7 @@
 */
 
 
+ /* -------------------GRUNDINSTÄLLNINGAR.------------------- */
 
 
 * {
@@ -15,26 +16,14 @@
 }
                                                     
                                
-
-
-/* ----------- INTRO TEXT -----------*/
-
-
- /* --  STILAR FÖR TEXTER PÅ STARTSIDANS INTRO-RUTA . --*/
-.intro-ruta h2 {
-    font-size: 32px;                     
-    font-weight: 600;
-    line-height: 1.3;
-    margin-bottom: 10px;
+html {
+    scroll-behavior: smooth;    /* -- GER EN MJUKARE OCH MER ANVÄNDARVÄNLIG SCROLL -- */
 }
 
+/* -------------------FONT.------------------- */
 
-/* ----------- FONT -----------*/
-
- /* -- GRUNDINSTÄLLNINGAR FÖR TYPSNITT PÅ HELA SIDAN. -- */
 body, p, li {
     font-family: 'Open Sans', sans-serif;           
-
     font-weight: 400;
 }
 
@@ -43,9 +32,8 @@ h1, h2, h3 {
     font-weight: 600;
 }
 
-/* ----------- Grund -----------*/
+/* -------------------GRUND.------------------- */
 
-/* -- BAKGRUNDSFÄRG OCH GRUNDLÄGGANDE TEXTJUSTERINGAR. -- */ 
     body {
       background-color:	#E0D2BD           
 
@@ -58,6 +46,8 @@ h1, h2, h3 {
     p {
     text-align: center;
 }
+
+/* -------------------INTRO-RUTA------------------- */
 .intro-ruta {
 
 /* -- UTSEENDE FÖR INTRO-RUTAN: BAKGRUND, PADDING OCH RUNDADE HÖRN-- */
@@ -69,6 +59,14 @@ h1, h2, h3 {
     margin-bottom: 30px;
     padding: 25px 25px;
     line-height: 1.5;
+}
+
+
+.intro-ruta h2 {
+    font-size: 32px;                     
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 10px;
 }
 .intro-ruta p {
     font-size: 20px;
@@ -158,25 +156,8 @@ input, textarea {
     padding: 15px;     
 }
 
-button {
-    padding: 20px 60px; /* -- STOR OCH TYDLIG KNAPP SOM ÄR LÄTT ATT TRYCKA PÅ -- */
 
-    border-radius:20px;   /* -- RUNDADE HÖRN FÖR ETT MJUKARE OCH MER ANVÄNDARVÄNLIGT UTSEENDE -- */
-    font-size: 16px;
-    background-color: #4CAF50;  /* -- GRÖN FÄRG FÖR ATT  SIGNALERA "SKICKA" ELLER "BEKRÄFTA" -- */
-    color: white;
-    border: none;
-    cursor: pointer;                /* -- VISAR ATT ELEMENTET ÄR KLICKBART -- */
-    transition: 0.3s;
-}
-button:hover {
-    background-color: #007CCC;               /* -- HOVER-EFFEKT SOM GÖR KNAPPEN MER INTERAKTIV -- */
-}
-/* ----------- Formulär-----------*/
-
-
-/* -- STIL FÖR FORMULÄR, INPUTFÄLT OCH KNAPPAR -- */
-
+/* ------------------- FORMULÄR-------------------*/
 
 form {
 
@@ -185,20 +166,10 @@ form {
     margin: auto;
     padding: 50px;
     max-width: 450px;
-
-
 }                                                                     
 
+/* STÖRRE INPUTFÄLT FÖR BÄTTRE LÄSBARHET OCH EXTRA PADDING FÖR ATT GÖRA DET MER ANVÄNDARVÄNLIGT. */
 
-input, textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 10px;
-    border: 1px solid #bbb;
-     border-radius: 6px;
-
-    
-}
 
 
 textarea:focus {
@@ -206,7 +177,6 @@ textarea:focus {
     border-color: #007CCC;
     box-shadow: 0 0 0 3px rgba(0,124,204,0.2);
     
-
 }
 
 .intro-text {
@@ -229,13 +199,24 @@ textarea:focus {
 }
 
 
-/* ----------- Listor -----------*/
+button {
+    padding: 20px 60px; /* -- STOR OCH TYDLIG KNAPP SOM ÄR LÄTT ATT TRYCKA PÅ -- */
 
-ul {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-left: 20px;
+    border-radius:20px;   /* -- RUNDADE HÖRN FÖR ETT MJUKARE OCH MER ANVÄNDARVÄNLIGT UTSEENDE -- */
+    font-size: 16px;
+    background-color: #4CAF50;  /* -- GRÖN FÄRG FÖR ATT  SIGNALERA "SKICKA" ELLER "BEKRÄFTA" -- */
+    color: white;
+    border: none;
+    cursor: pointer;                /* -- VISAR ATT ELEMENTET ÄR KLICKBART -- */
+    transition: 0.3s;
 }
+button:hover {
+    background-color: #007CCC;               /* -- HOVER-EFFEKT SOM GÖR KNAPPEN MER INTERAKTIV -- */
+}
+
+
+
+/* ----------- Listor -----------*/
 
 
  /* --- RUTOR FÖR VIKTIG INFORMATION, T.EX. AKUT HJÄLP--  */
@@ -333,7 +314,6 @@ main section {
 }
 
 
- 
 
 /* ----------- STÖD-SIDANS INTRO  ----------- */
 
@@ -428,9 +408,6 @@ main section {
     padding-left: 20px;
 }
 
-html {
-    scroll-behavior: smooth;    /* -- GER EN MJUKARE OCH MER ANVÄNDARVÄNLIG SCROLL -- */
-}
 
 /* ----------- Rättigheter & Integritet ----------*/
 
