@@ -333,13 +333,13 @@ main section {
 .stod-intro h2 {
     font-size: 34px;
     font-weight: 700;
-    color: #2F2F2F;
+    color: #2f2f2f;
     letter-spacing: 0.3px;  /* -- RENARE TYPO - */
     margin-bottom: 15px;  /* -- LUFT MELLAN RUBRIK OCH SJÄLVA BRÖDTEXTEN - */
 }
 
 .stod-intro p {
-    font-size: 20px;
+    font-size: 40px;
     color: #444;
     line-height: 1.75;
     max-width: 65ch;
@@ -419,18 +419,41 @@ main section {
 
 .rattigheter-intro{
     text-align: center;
+    margin-bottom: 50px;
+    padding: 10px;
 }
 .rattigheter-intro h2{
-    font-size: 50px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1f1f1f;
+    letter-spacing: 0.3px;
+    margin-bottom: 15px;
+
 }
+
+.rattigheter-intro p {
+    font-size: 26px;
+    color: #444;
+    max-width: 50ch;
+    margin-top: 0 auto;         /* Centrerar textblocket i mitten av sidan */
+    line-height: 1.6 ;
+    text-align: center;
+}
+
+
+
+.rattigheter-intro{
+    margin-bottom: 30px;
+}
+
 .rattigheter-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);     /* -- SAMMA GRID-PRINCIP SOM OVAN -- */
     gap: 20px;
     margin-top: 30px;
+
+
     
-
-
 }
 
 
