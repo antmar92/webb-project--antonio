@@ -1,4 +1,3 @@
-
 /* 
    CSS för Hjälpvägledningsidan.
    Skapad av: Antonio Martinez
@@ -53,7 +52,6 @@ h1, h2, h3 {
 /* -- UTSEENDE FÖR INTRO-RUTAN: BAKGRUND, PADDING OCH RUNDADE HÖRN-- */
     background-color: #FDF8F0B3;
     padding: 20px;                       
-
     border-radius: 8px;
     text-align: center;
     margin-bottom: 30px;
@@ -76,17 +74,44 @@ h1, h2, h3 {
 /* ----------- HEADER -----------*/
 
 /* -- STIL FÖR SIDANS HEADER OCH NAV. -- */
+
 header {
     background-color:#FFF8EE;
-    padding: 15px 20px;                 /*--- Minskar luft vertikalt (top/bottom) för att undvika stora glapp, men behåller luft horisontell----*/                         
+    padding: 15px 20px;                 /*--- MINSKAR LUFT VERTIKALT (UPP/NER) FÖR ATT UNDVIKA STORA GLAPP, MEN BEHÅLLER LUFT HORISONTELLT----*/                         
     border-bottom: 1px solid #DDD;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-logga {
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+.logga {
+
+    width: 60px;     
+    height: auto;
+    display: block;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
 }
 
 /* ----------- NAVIGATION LAYOUT MED FLEXBOX -----------*/
 nav {
-    display: flex;                /* -- FLEXBOX ANVÄNDS FÖR ATT LÄNKARNA SKA LIGGA I RAD -- */
+    display: flex;      /* -- FLEXBOX ANVÄNDS FÖR ATT LÄNKARNA SKA LIGGA I RAD -- */
+    justify-content: center;
     gap: 20px;
-    margin-top: 10px;
+    margin-top: 0;
+    width: 100%;
+
 }
 
 nav a {
@@ -97,9 +122,11 @@ nav a {
 
     
 }
+
+
 nav a:hover { 
     
-color: #007CCC                              /* -- HOVER - EFFEKTEN GÖR SÅ ATT LÄNKARNA BLIR BLÅ NÄR MAN TRYCKER PÅ DEN. -- */
+color: #007CCC      /* -- HOVER - EFFEKTEN GÖR SÅ ATT LÄNKARNA BLIR BLÅ NÄR MAN TRYCKER PÅ DEN. -- */
 
 }
 
@@ -108,7 +135,7 @@ color: #007CCC                              /* -- HOVER - EFFEKTEN GÖR SÅ ATT 
 
 /* -- SIDANS CENTRALA OMRÅDE, MED LITE LUFT RUNT INNEHÅLLET. -- */
 main {
-    padding: 20px 20px;                       
+    padding: 24px 20px;                       
 
     margin: auto;
 }
@@ -206,7 +233,6 @@ textarea:focus {
 
 button {
     padding: 20px 60px; /* -- STOR OCH TYDLIG KNAPP SOM ÄR LÄTT ATT TRYCKA PÅ -- */
-
     border-radius:20px;   /* -- RUNDADE HÖRN FÖR ETT MJUKARE OCH MER ANVÄNDARVÄNLIGT UTSEENDE -- */
     font-size: 16px;
     background-color: #4CAF50;  /* -- GRÖN FÄRG FÖR ATT  SIGNALERA "SKICKA" ELLER "BEKRÄFTA" -- */
@@ -334,14 +360,17 @@ main section {
 */
 
 .stod-intro,
-.rattigheter-intro{
+.rattigheter-intro {
     margin:40px 0 30px;    /*-- LÄGGER TILL LITE LUFT UPP/NER OCH BEGRÄNSAR HÖGER/VÄNSTER FÖR TYDLIGARE SEPARERATION FRÅN HEADER ---*/
     padding: 0;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
 }
 
 
 .stod-intro h2,
-.rattigheter-intro h2{
+.rattigheter-intro h2 {
     font-size: 34px;
     font-weight: 700;
     color: #2f2f2f;
@@ -350,7 +379,7 @@ main section {
 }
 
 .stod-intro p,
-.rattigheter-intro p{
+.rattigheter-intro p {
     font-size: 26px;
     color: #444;
     max-width: 50ch;
@@ -431,13 +460,6 @@ main section {
 
 /* ----------- Rättigheter & Integritet ----------*/
 
-.rattigheter-intro{
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 30px;
-}
-
-
 
 .rattigheter-grid {
     display: grid;
@@ -480,8 +502,7 @@ main section {
 /* ----------- FOOTER-----------*/
 footer {
     text-align: center;
-    padding: 20px;
-    margin-top: 50px;   
+    padding: 20px;  
     margin-top: 40px;                /* -- STIL FÖR SIDOFOTEN LÄNGST NER PÅ SIDAN - - */
 
     background: #FFFFFF;
