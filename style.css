@@ -184,13 +184,14 @@ textarea:focus {
 }
 
 .intro-text {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     color: #2F2F2F;
+
 }
 
 .huvudtext {
-    font-size: 16px;
+    font-size: 19px;
     color: #666;
 }
 
@@ -199,7 +200,7 @@ textarea:focus {
     max-width: 500px;   /* samma bredd som formuläret */
     margin: 0 auto 5px;
     text-align: center;
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 
