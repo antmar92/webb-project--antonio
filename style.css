@@ -1,3 +1,4 @@
+
 /* 
    CSS för Hjälpvägledningsidan.
    Skapad av: Antonio Martinez
@@ -126,7 +127,7 @@ main p {
     text-align: center;
     line-height: 1.6;
     color: #222222;
-    margin: 0 auto 30px         /* Centrerar hela paragrafblocket på sidan.Behövs för att texten ska kunna alignas mot mitten,
+    margin: 0 auto 30px;         /* Centrerar hela paragrafblocket på sidan.Behövs för att texten ska kunna alignas mot mitten,
                                 eftersom text-align bara centrerar innehållet – inte själva blocket. */
 
 
@@ -416,10 +417,10 @@ main section {
 
 /* ----------- Rättigheter & Integritet ----------*/
 
-.rattigheter-inro{
+.rattigheter-intro{
     text-align: center;
 }
-.rattigheter-inro h2{
+.rattigheter-intro h2{
     font-size: 50px;
 }
 .rattigheter-grid {
@@ -564,5 +565,4 @@ NÄR MAN KLICKAR PÅ "Läs mer" PÅ STARTSIDAN HOPPAR SIDAN TILL RÄTT RUTA PÅ 
     from { box-shadow: 0 0 20px rgba(74,144,226,0.6); }
     to   { box-shadow: none; }
 }
-
 
