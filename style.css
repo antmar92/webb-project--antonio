@@ -57,7 +57,6 @@ h1, h2, h3 {
     border-radius: 8px;
     text-align: center;
     margin-bottom: 30px;
-    padding: 25px 25px;
     line-height: 1.5;
 }
 
@@ -79,7 +78,7 @@ h1, h2, h3 {
 /* -- STIL FÖR SIDANS HEADER OCH NAV. -- */
 header {
     background-color:#FFF8EE;
-    padding: 20px;                             
+    padding: 15px 20px;                 /*--- Minskar luft vertikalt (top/bottom) för att undvika stora glapp, men behåller luft horisontell----*/                         
     border-bottom: 1px solid #DDD;
 }
 
@@ -109,7 +108,7 @@ color: #007CCC                              /* -- HOVER - EFFEKTEN GÖR SÅ ATT 
 
 /* -- SIDANS CENTRALA OMRÅDE, MED LITE LUFT RUNT INNEHÅLLET. -- */
 main {
-    padding: 40px 20px;                       
+    padding: 20px 20px;                       
 
     margin: auto;
 }
@@ -321,31 +320,46 @@ main section {
 
 
 
-/* ----------- STÖD-SIDANS INTRO  ----------- */
 
-.stod-intro {
-    text-align: center;     /* -- CENTRERING AV RUBRIK OCH TEXT - */
-    margin-bottom: 50px;  /* -- SKAPAR LUFT NERÅT FÖR ATT UNDVIKA ATT KORTEN INTE LIGGER FÖR NÄRA - */
-    padding: 10px;   /* -- INRE LUFT FÖR ATT TEXTEN INTE SKA KLISTRAS MOT KANT  - */
 
+/* ----------- STÖD - OCH RÄTTIGHETSSIDANS INTRO  ----------- */
+
+/*
+   Återanvänder design:
+   Samma typografi används för flera sektioner (stöd- och rättighetssidan)
+   för att undvika duplicerad kod, buggar, och skapa struktur i form av en enhetlig design.
+
+   Bas-typografi sätts globalt för konsekvens.
+   Justeringar vrids per sektion för visuell balans och layout.
+*/
+
+.stod-intro,
+.rattigheter-intro{
+    margin:40px 0 30px;    /*-- LÄGGER TILL LITE LUFT UPP/NER OCH BEGRÄNSAR HÖGER/VÄNSTER FÖR TYDLIGARE SEPARERATION FRÅN HEADER ---*/
+    padding: 0;
 }
 
-.stod-intro h2 {
+
+.stod-intro h2,
+.rattigheter-intro h2{
     font-size: 34px;
     font-weight: 700;
     color: #2f2f2f;
-    letter-spacing: 0.3px;  /* -- RENARE TYPO - */
-    margin-bottom: 15px;  /* -- LUFT MELLAN RUBRIK OCH SJÄLVA BRÖDTEXTEN - */
+    letter-spacing: 0.3px;
+    margin-bottom: 12px;
 }
 
-.stod-intro p {
-    font-size: 40px;
+.stod-intro p,
+.rattigheter-intro p{
+    font-size: 26px;
     color: #444;
-    line-height: 1.75;
-    max-width: 65ch;
-    margin: 0 auto;              /* Centrerar textblocket i mitten av sidan */
-    line-height: 1.6 ;
+    max-width: 50ch;
+    margin: 0 auto;         /* Centrerar textblocket i mitten av sidan */
+    line-height: 1.6;
+    text-align: center;
 }
+
+
 
 /* ----------- GRID SEKTION. stod ----------*/
 .stod-grid {                                       
@@ -419,26 +433,8 @@ main section {
 
 .rattigheter-intro{
     text-align: center;
-    margin-bottom: 50px;
     padding: 10px;
     margin-bottom: 30px;
-}
-.rattigheter-intro h2{
-    font-size: 32px;
-    font-weight: 700;
-    color: #1f1f1f;
-    letter-spacing: 0.3px;
-    margin-bottom: 15px;
-
-}
-
-.rattigheter-intro p {
-    font-size: 26px;
-    color: #444;
-    max-width: 50ch;
-    margin-top: 0 auto;         /* Centrerar textblocket i mitten av sidan */
-    line-height: 1.6 ;
-    text-align: center;
 }
 
 
@@ -550,7 +546,7 @@ footer a {
 
     }
     main {
-        padding: 20px ;                        
+        padding: 20px 20px ;                        
          }
         .grid-section,
         .stod-grid,
