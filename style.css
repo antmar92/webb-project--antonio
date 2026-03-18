@@ -214,6 +214,7 @@ button {
     border: none;
     cursor: pointer;                /* -- VISAR ATT ELEMENTET ÄR KLICKBART -- */
     transition: 0.3s;
+    width: 100%;
 }
 button:hover {
     background-color: #007CCC;               /* -- HOVER-EFFEKT SOM GÖR KNAPPEN MER INTERAKTIV -- */
